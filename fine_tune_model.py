@@ -7,8 +7,8 @@ import underthesea
 
 MAX_LEN = 160
 sw = None#load_stopwords()
-model_save = BertForSequenceClassification.from_pretrained('./model_save_ver2')
-tokenizer = AutoTokenizer.from_pretrained('./model_save_ver2')
+model_save = BertForSequenceClassification.from_pretrained('tam18902/sentimentanalysis')
+tokenizer = AutoTokenizer.from_pretrained('tam18902/sentimentanalysis')
 def word_to_tokenize(text, sw):
     for id, line in enumerate(text):
         """
